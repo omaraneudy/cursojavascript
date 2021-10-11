@@ -1,0 +1,33 @@
+----------------------------------------------
+Comentarios:
+Se puede realizar comentarios de una línea con //, o comentarios multilíneas con /* insertar comentario aquí */
+
+----------------------------------------------
+Tipos de datos:
+undefined - no hay dato asignado
+null - un objeto es nulo o no existe
+boolean - dato verdarero o falso
+string - representa cadena de caracteres
+symbol
+number - representa un numero
+object - representa un objeto que relaxiona propiedades y funciones bajo la misma estructura
+
+----------------------------------------------
+Variable:
+Se pueden crear variables con la variable clave var seguido del nombre de la variable,
+luego el signo igual (=) para asignarle un valor. Ej: var nombre = "Juan";
+
+Variable inicializada: es cuando se le asigna un valor
+Variable no inicializada: es cuando a la variable todavía no se le ha asignado un valor
+
+-----------------------------------------------
+Aritmética:
+en Javascript se pueden llevar a cabo operaciones aritméticas, como la suma, resta, división, etc.
+
+----------------------------------------------
+Resto de una división:
+Permite obtener la parte restante de una división. El resto se calcula utilizando el signo %
+Ej: var resultado = 4 % 2;
+
+
+
