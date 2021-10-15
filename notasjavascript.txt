@@ -23,7 +23,14 @@ defer: este atributo permite ejecutar los scripts cargados por orden de aparici�
 
 async: este atributo permite ejecutar scripts y evitar el bloqueo de script al igual que defer, solo que async no asegura que los scripts se ejecuten en orden específico. Se usa normalmente para ejecutar scripts de una página de forma independiente y los scripts no dependen de otro script de la página.
 
+Eventos:
+son cosas que suceden en el navegador. 
+botonSubmit.addEventListener('click', checkGuess);
  
+el addEventListener es un escucha de eventos y toma dos argumentos: el tipo de evento a escuchar, y el código que queremos ejecutar cuando suceda el evento.
+
+
+
 https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/A_first_splash#ejemplo_%E2%80%94_juego_adivina_el_n%C3%BAmero
 
 ----------------------------------------------
@@ -64,6 +71,19 @@ Operadores aritméticos:
 
 + se puede usar para concatenar o unir cadenas de texto
 
+variable++ aumenta en uno el valor de la variable
+variable-- reduce en uno el valor de la variable
+
+----------------------------------------------
+Operador de asignación compuesta:
+Asignacion de suma: permite incrementar el valor de una variable en la cantidad que determinemos. Ej: variable += 5;
+
+Asignación de resta: permite reducir el valor en la cantidad que determinemos. Ej: variable -= 5;
+
+Asignación de división: permite dividir el valor de una variable por el valor que determinemos. Ej: variable /= 4;
+
+Asignación de multiplicación: permite multiplicar el malor de una variable por el valor que deseemos. Ej: variable *= 5;
+
 ----------------------------------------------
 Operadores de comparación:
 === igualdad estricta
@@ -74,7 +94,31 @@ Operadores de comparación:
 Resto de una división:
 Permite obtener la parte restante de una división. El resto se calcula utilizando el signo %
 Ej: var resultado = 4 % 2;
+------------------------------------------------
+Cadenas de caracteres:
+se crean con los signos "" ó ''.
 
+Secuencia de escape para comillas: para hacer que las comillas formen parte de la cadena, podemos usar el caracter / antes de la comilla que queramos incluir. Ej: variable = "Esto está entre \"comilla\" "
 
+También para poder incluir comilla en una cadena de caracteres, podemos usar una de las dos comillas. Ej: variable = "Soy un 'millonario' ", o también: variable = 'Soy un "millonario"'
+
+------------------------------------------------
+Secuencias de caracteres:
+Estas tienen un significado diferente dentro de una secuencia de caracteres.
+
+Algunos de estos son:
+
+comilla simple \'
+comilla doble \"
+barra invertida \\
+linea nueva \n
+retorno de carro \r
+tabulación \t
+retroceso \b
+salto de página \f
+------------------------------------------------
+Longitud de cadena de caracteres:
+Esto es cuanto caracteres tiene una cadena de caracteres.
+Para avreiguar la longitud de una cadena, se le coloca .length luego de la variable que contiene la cadena. Ej: variable.length;
 
 
