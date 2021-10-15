@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+
+        <label for="guessField">Adivina el número: </label><input type="text" id="guessField" class="guessField"> 
+        <input type="submit" value="Enviar respuesta" class="guessSubmit">
+
+        <script>
+            let randomNumber = Math.floor(Math.random() * 100) + 1;
+            const guesses = document.querySelector('.guesses');
+            const lastResult = document.querySelector('.lastResult');
+            const lowOrHi = document.querySelector('.lowOrHi');
+            
+            const guessSubmit = document.querySelector('.guessSubmit');
+            const guessField = document.querySelector('.guessField');
+            let guessCount = 1;
+            let resetButton;
+
+            function checkGuess(){
+                alert('Soy un marcador de posición');
+            }
+
+        </script>
+    </body>
+</html>

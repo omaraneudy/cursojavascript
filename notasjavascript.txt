@@ -1,3 +1,35 @@
+Notas a tomar en cuenta con javascript:
+Para solucionar los problemas de carga de scripts en una página se pueden aplicar.
+
+Algunos problemas que se presentan a la hora de cargar scripts en el momento adecuado son:
+El HTML de una página se carga en el orden en que aparece, lo que presenta un problema si se utiliza javascript para manipular elementos de la página. Esto no funciona si el código javascript se carga y se procesa antes que el HTML que nosotros queremos que haga algo.
+
+Si colocamos javascript en el encabezado, este se cargará y se ejecutará antes de que se analice el cuerpo HTML, lo que puede causar un error.
+
+Una solución a esto puede ser utilizar la estructura siguiente:
+
+document.addEventListener("DOMContentLoaded", function(){
+	...
+});
+Lo anterior se conoce como detector de eventos, que escucha el evento "DOMContentLoaded" del navegador, el cual indica que el cuerpo HTML ya se cargó y se analizó. El código javascript dentro del bloque anterior no se ejecutará hasta que se active ese evento.
+
+Otra solución, utilizando javascript externo, puede ser utilizando el atributo defer en la etiqueta script del documento HTML. defer le dice al navegador que siga descargando el contenido HTML luego de alcanzar la etiqueta del elemento <script>.
+
+<script src="script.js" defer></script>
+
+Esto permite que se cargue simultaneamente el script y el HTML y que el código funcione.
+
+defer: este atributo permite ejecutar los scripts cargados por orden de aparición en la página y se ejecutará luego de que se descargue el script y el contenido HTML.
+
+async: este atributo permite ejecutar scripts y evitar el bloqueo de script al igual que defer, solo que async no asegura que los scripts se ejecuten en orden específico. Se usa normalmente para ejecutar scripts de una página de forma independiente y los scripts no dependen de otro script de la página.
+
+ 
+https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/A_first_splash#ejemplo_%E2%80%94_juego_adivina_el_n%C3%BAmero
+
+----------------------------------------------
+
+
+
 ----------------------------------------------
 Comentarios:
 Se puede realizar comentarios de una línea con //, o comentarios multilíneas con /* insertar comentario aquí */
@@ -24,6 +56,20 @@ Variable no inicializada: es cuando a la variable todavía no se le ha asignado 
 Aritmética:
 en Javascript se pueden llevar a cabo operaciones aritméticas, como la suma, resta, división, etc.
 
+Operadores aritméticos: 
++ suma
+- resta
+* multiplicación
+/ división
+
++ se puede usar para concatenar o unir cadenas de texto
+
+----------------------------------------------
+Operadores de comparación:
+=== igualdad estricta
+!== no igual
+< menor que
+> mayor que
 ----------------------------------------------
 Resto de una división:
 Permite obtener la parte restante de una división. El resto se calcula utilizando el signo %
