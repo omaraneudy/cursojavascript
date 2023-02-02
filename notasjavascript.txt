@@ -35,8 +35,6 @@ https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/A_first_splas
 
 ----------------------------------------------
 
-
-
 ----------------------------------------------
 Comentarios:
 Se puede realizar comentarios de una línea con //, o comentarios multilíneas con /* insertar comentario aquí */
@@ -121,4 +119,14 @@ Longitud de cadena de caracteres:
 Esto es cuanto caracteres tiene una cadena de caracteres.
 Para avreiguar la longitud de una cadena, se le coloca .length luego de la variable que contiene la cadena. Ej: variable.length;
 
+------------------------------------------------
+Bucle:
+Permiten ejecutar un bloque de código varias veces hasta cumplir una condicion determinada.
 
+For: bucle que toma tres valores; valor inicial, la condición de salida y el incremento.
+
+for (let i = 0; i < 10; i++){
+	console.log(i);
+}
+
+------------------------------------------------
