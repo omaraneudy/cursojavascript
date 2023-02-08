@@ -120,6 +120,19 @@ Esto es cuanto caracteres tiene una cadena de caracteres.
 Para avreiguar la longitud de una cadena, se le coloca .length luego de la variable que contiene la cadena. Ej: variable.length;
 
 ------------------------------------------------
+Notación de corchete: nos permite acceder a un dato en especifico 
+al colocar un indice. Por ejemplo, en una cadena de caracteres podemos especificar
+a qué elementos de lacadena podemos acceder.
+var palabra = 'aguacate';
+console.log(palabra[2]);
+
+al especificar el indice 2, le indicamos que queremos que nos muestre el caracter 'u', ya 
+que la cadena tiene un orden de indice que inicia desde el cero.
+a g u a c a t e
+0 1 2 3 4 5 6 7
+
+
+------------------------------------------------
 Bucle:
 Permiten ejecutar un bloque de código varias veces hasta cumplir una condicion determinada.
 
@@ -130,3 +143,14 @@ for (let i = 0; i < 10; i++){
 }
 
 ------------------------------------------------
+Arrays
+Son estructuras de datos que nos permiten almacenar varios datos en una misma estructura.
+Para formar un array, se declara una variable, a la cual se le asignan los valores dentro de unos corchetes y separados por comas.
+ejemplo:
+var estudiantes = ["juan", "pedro", "jose"];
+
+Arrays anidados
+Son arreglos que contienen otros arreglos dentro.
+
+var productos = [["Coca Cola", 25], ["Dona", 30]];
+
