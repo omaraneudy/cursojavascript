@@ -149,8 +149,42 @@ Para formar un array, se declara una variable, a la cual se le asignan los valor
 ejemplo:
 var estudiantes = ["juan", "pedro", "jose"];
 
-Arrays anidados
+Arrays anidados:
 Son arreglos que contienen otros arreglos dentro.
 
 var productos = [["Coca Cola", 25], ["Dona", 30]];
+
+Acceder a elementos de un arreglo:
+Para acceder a los elementos que están dentro de un arreglo, basta con colocar
+el nombre de la variable y luego entre corchetes colocar el indice al que 
+queremos acceder.
+
+var arreglo = ["juan", "pedro", "Manuel"];
+console.log(arreglo[2]); // en este caso estamos accediendo al dato del indice 2, el cual contiiene la cadena "Manuel".
+
+Modificar datos de un arreglo:
+Para hacerlo, solo es necesario colocar el nombre de la variable, y entre
+corchetes indicar el índice en el que se modificará el dato, seguido del 
+signo de asignacion, y luego el datos que se quiera introducir en ese indice.
+
+arreglo[1] = "Juana";
+
+Acceder a arreglos multidimensionales:
+Se accede a elementos de arreglos multidimensionales colocando el nombre de la variable,
+seguido de entre corchetes del índice donde se encuentra el arreglo que buscamos, y luego entre
+corchetes colocamos el indice interno del elemento al que queramos acceder en el array anidado.
+
+var arreglo = [[1,2,3], [4,5,6], [7,8,9]]
+console.log(arreglo[0]); // [1,2,3]
+console.log(arreglo[0][2]); // 3
+
+.push():
+es un método para añadir nuevos elementos a un arreglo.
+
+var arreglo = ["Primavera", "Verano", "Otoño"];
+
+arreglo.push("Invierno");
+
+console.log(arreglo); // ["Primavera", "Verano", "Otoño", "Invierno"];
+ 
 
