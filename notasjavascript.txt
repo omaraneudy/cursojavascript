@@ -187,4 +187,153 @@ arreglo.push("Invierno");
 
 console.log(arreglo); // ["Primavera", "Verano", "Otoño", "Invierno"];
  
+.pop():
+es un método para remover el último elemento de un arreglo.
+
+var arreglo = [1, 2, 3];
+
+arreglo.pop();
+
+console.log(arreglo); // [1 , 2]
+
+
+Podemos colocar el elemento removido dentro de una variable:
+
+var numero = arreglo.pop();
+
+console.log(numero); // 2
+
+
+.shift():
+
+Nos permite removar el primer elemento de una arreglo.
+
+var arreglo = ["a", "b", "c"];
+
+arreglo.shift();
+
+console.log(arreglo); // ["b", "c"]
+
+.unshift():
+Nos permite agregar un elemento al principio del arreglo.
+ 
+arreglo.unshift("x");
+
+console.log(arreglo); // ["x", "b", "c"]
+
+---------------------------------------------------------------------
+Funciones:
+
+Con las funciones se puede escribir código que se puede reutilizar.
+
+function mostrarMensaje(){
+   console.log("¡Hola mundo!");
+
+}
+
+Para reutilizarlo, basta con hacer esto:
+
+mostrarMensaje();
+
+Argumentos:
+nos permite pasarle datos a una función para que pueda trabajar con ellos
+
+function sumar(a, b){
+    var suma = a + b;
+    console.log("El resultado de " + a + " + " + b + " es: " suma);
+}
+
+sumar(3, 5);
+ 
+Ámbito global:
+una variable con ámbito global permite acceder a su valor fuera y dentro de una función.
+
+var variableGlobal = 5;
+
+function miVariableGlobal(){
+   console.log(variableGlobal);
+}
+
+miVariableGlobal(); // 5
+
+console.log(variableGlobal); // 5
+
+Ámbito local:
+una variable con ámbito local permite acceder a su valor sólo en la función donde se declaró.
+
+function miVariableLocal(){
+   var variableLocal = 23;
+   console.log(variableLocal);
+}
+
+miVariableLocal(); // 23
+
+console.log(variableLocal); //reference error: variableLocal is not defined
+
+
+Las variables locales tienen mayor preferencia si comparte el mismo nombre con la variable global
+
+var nombreEmpresa = "Pepsico";
+
+function imprimirNombre(){
+	var nombreEmpresa = "Cocacola company";
+	console.log(nombreEmpresa);
+}
+
+imprimirNombre(); // "Cocacola company"
+
+console.log(nombreEmpresa); // "Pepsico"
+
+Retornar un valor:
+con la palabra reservada return, permite a la función devolver un valor de una función.
+
+function suma(a, b){
+	return a + b;
+}
+
+console.log(suma(1,3));
+
+Las funciones por defecto retornan el valor undefined.
+
+Se puede trabajar con el valor que retorne una función:
+
+function miPresentacion(nombre){
+ var presentacion = "¡Hola, mi nombre es " + nombre + "!";
+ return presentacion;
+}
+
+var presentacionCompleta = miPresentacion("José");
+
+console.log(presentacionCompleta); // "¡Hola, mi nombre es José!";
+
+----------------------------------------------------------------------
+Cola o queue:
+estructura de datos abstracta en la que los elementos se mantienen en orden. Los nuevos elementos se pueden añadir al final de la cola, y los elementos previos se retiran del principio de la cola.
+
+
+-----------------------------------------------------------------------
+Valores booleanos:
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
