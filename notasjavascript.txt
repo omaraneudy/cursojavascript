@@ -314,6 +314,41 @@ estructura de datos abstracta en la que los elementos se mantienen en orden. Los
 -----------------------------------------------------------------------
 Valores booleanos:
 
+Son tipos de datos que representan dos estados: true y false.
+
+---------------------------------------
+Operador de igualdad:
+ Se utilizar para comparar la igualdad que existe entre dos datos.
+
+console.log("Hola" == "Hola"); // true
+
+
+Operador de igualdad estricta:
+se utiliza para tambien tomar en cuenta en la comparación el tipo de dato de los datos a comparar.
+
+
+console.log(9 === 9); //true
+console.log("9" === 9); //false
+
+
+Operador de desigualdad:
+Se utiliza para comparar valores en base a si son distintos los datos, retornando true si son distintos, y retornando false si son iguales.
+
+console.log(9 != 6); //true
+console.log(9 != 9); //false
+console.log("1" != 1); false
+
+Operador de desigualdad estricta:
+Se usa para comparar la desigualdad tambien tomando en cuenta el tipo de dato de los datos.
+
+console.log("1" !== 1); //true
+
+
+
+
+
+
+
 
 
 
